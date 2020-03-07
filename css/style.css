@@ -3,6 +3,9 @@
     font-family: 'Roboto Slab', serif;
     font-family: 'Roboto', sans-serif;
 } */
+:root{
+    --primary-color:#dff9fb;
+}
 body{
     font-family: 'Roboto';background: #12c2e9;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
@@ -46,8 +49,12 @@ nav>.logo{
     display: inline;
     margin: 10px 40px;
 }
+.nav-links>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
 .active{
-    background-color: teal;
+    border-bottom:1px solid var(--primary-color);
     color: black;
 }
 .fullscreencontainer{
@@ -61,10 +68,20 @@ nav>.logo{
     margin-top: 200px;
 }
 .name{
-    margin-top: 0px;
+    margin: 0px;
     font-size: 100px;
     text-transform: uppercase;
     font-weight: 900;
-    color:yellow;
+    color:var(--primary-color);
     font-family: 'Roboto', sans-serif;
+}
+.status{
+    margin-top: 0px;
+}
+h1 span{
+    background-color: #1565C0;
+    width: auto;
+    position: relative;
+    color: white;
+    padding: 5px 5px;
 }
