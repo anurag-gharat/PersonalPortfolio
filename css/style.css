@@ -4,8 +4,9 @@
     font-family: 'Roboto', sans-serif;
 } */
 body{
-    font-family: 'Viaoda Libre', cursive;
-    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+    font-family: 'Roboto';background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
     height: 100%;
     background-attachment: fixed;
@@ -15,17 +16,55 @@ body{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
+}
+.landing-text{
+    text-align: center;
 }
 #particles-js{
     width: 100%;
     height: 100vh;
+}
+nav{
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+}
+nav>.logo{
+    margin: 20px;
+}
+.nav-links{
+   display: block;
+}
+.nav-links>ul{
+    display: block;
+}
+.nav-links>ul>li{
+    display: inline;
+    margin: 10px 40px;
+}
+.active{
+    background-color: teal;
+    color: black;
 }
 .fullscreencontainer{
     position:absolute;
     width: 100vw;
     height: 100vh;
 }
-p{
-    font-family: 'Viaoda Libre', cursive;
-    color: white;
+.intro{
+    font-size: 28px;
+    margin-bottom: 0px;
+    margin-top: 200px;
+}
+.name{
+    margin-top: 0px;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:yellow;
+    font-family: 'Roboto', sans-serif;
 }

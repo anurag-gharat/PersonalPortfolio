@@ -12,8 +12,34 @@
 <body id="particles-js">
         <!-- here is the landing text -->
         <div class="fullscreencontainer">
-            <h1>Hello i am anurag gharat</h1>
+            <nav>
+                <div class="logo">
+                    My websites
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li class="active"><a data-page="home" href="#">Home</a></li>
+                        <li><a data-page="about" href="#about">About</a></li>
+                        <li><a data-page="skills" href="#skills">Skills</a></li>
+                        <li><a data-page="contact" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section>
+                <div class="landing-text">
+                    <h1 class="intro">Hey There! I am </h1>
+                    <h1 class="name">Anurag_Gharat</h1>
+                    <h1>I can make amazing websites</h1>
+                </div>
+                <div class="landing-socialmedia">
+    
+                </div>
+            </section>
+            
         </div>
+        <section>
+
+        </section>
 </body>
 </html>
 <script src="./js/jquery.js"></script>
@@ -24,4 +50,9 @@
     particlesJS.load('particles-js','particles.json',function(){
         console.log('working');
     });
+</script>
+<script type="text/javascript">
+        $(document).on('click', 'ul li' , function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
 </script>
