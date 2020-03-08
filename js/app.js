@@ -65,5 +65,5 @@ class TypeWriter {
     new TypeWriter(txtElement, words, wait);
   }
 $(window).scroll(function(){
-    $('nav').toggleClass('scrolled',$(this).scrollTop() > 200);
+    $('nav').toggleClass('scrolled',$(this).scrollTop() > 500);
 });

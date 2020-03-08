@@ -1,13 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Roboto|Roboto+Slab|Viaoda+Libre&display=swap');/* body{
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Spartan|Roboto|Roboto+Slab|Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bellota|Caveat|Courgette|Dancing+Script|Indie+Flower|Lobster|Lobster+Two|Satisfy&display=swap');   
+   
+/* body{   
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Roboto Slab', serif;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Bellota', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Lobster Two', cursive;
 } */
 :root{
     --primary-color:#fff;
     --secondary-color:#c471ed;
     --tertiary-color:#ec008c;
     --primary-font:'Roboto', sans-serif;
+    --secondary-font:'Spartan',sans-serif;
 }
 body{
     font-family: 'Roboto'; /* fallback for old browsers */
@@ -23,6 +35,7 @@ body{
     overflow-x: hidden;
     scroll-behavior: smooth;
     z-index: -1;
+    /* overflow-y: hidden; */
 }
 .no-pad{
     padding: 0px;
@@ -32,14 +45,13 @@ body{
 }
 #particles-js{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh;
     background-image: url("https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-    
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     background-attachment: fixed;
-    /* background-color: #222222; */
+    background-color: #222222;
 }
 .row{
     display: flex;
@@ -50,6 +62,10 @@ body{
     width: 50%;
     height: auto;
 }
+.font-secondary{
+    font-family: var(--secondary-font);
+}
+
 /* navbar links */
 nav{
     background: transparent;
@@ -76,37 +92,63 @@ nav>.logo{
 .nav-links>ul>li>a{
     text-decoration: none;
     color: white;
+    font-family: var(--primary-font);
 }
 .active{
-    border-bottom:1px solid var(--primary-color);
-    color: var(--secondary-color);
+    border-bottom:2px solid var(--secondary-color);
+    color: var(--secondary-color) !important;
 }
-.active a{
-    color: var(--secondary-color);
+.active>a{
+    font-size: 1.5rem;
 }
 .scrolled{
-    background-color: #c471ed;
+    background-color: #fff;
+    box-shadow: 1px 5px 4px 5px #f8f8f8;
+}
+.scrolled>.nav-links>ul>li>a{
+    color:grey!important; 
+}
+.scrolled>.nav-links>ul>.active>a{
+    font-size: 1.5rem;
+    color: var(--secondary-color) !important; 
 }
 /* landing page styles */
 .intro{
-    font-size: 28px;
+    letter-spacing: 2px;
+    font-size: 24px;
     margin-bottom: 0px;
     margin-top: 200px;
+    font-family: var(--secondary-font);
 }
 .name{
     margin: 0px;
     font-size: 100px;
-    text-transform: uppercase;
     font-weight: 900;
-    color: var(--secondary-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--primary-color);
+    font-family: 'Satisfy', cursive;
+}
+.slash{
+    font-size: 30px;
+    height: 40px;
+}
+.name>span{
+    width: auto;
+    padding: 20px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 .status{
-    margin-top: 0px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 200;
 }
-h1 span{
-    background-color: var(--tertiary-color);
+.txt-type{
+    background-color: var(--secondary-color);
     width: auto;
+    font-family: var(--secondary-font);
     position: relative;
     color: white;
     padding: 5px 5px;
