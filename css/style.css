@@ -65,7 +65,11 @@ body{
 .font-secondary{
     font-family: var(--secondary-font);
 }
-
+.container{
+    width: 80%;
+    height:auto;
+    margin: auto;
+}
 /* navbar links */
 nav{
     background: transparent;
@@ -103,7 +107,7 @@ nav>.logo{
 }
 .scrolled{
     background-color: #fff;
-    box-shadow: 1px 5px 4px 5px #f8f8f8;
+    /* box-shadow: 1px 5px 4px 5px #f8f8f8; */
 }
 .scrolled>.nav-links>ul>li>a{
     color:grey!important; 
@@ -138,6 +142,7 @@ nav>.logo{
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip:text;
 }
 .status{
     margin-top: 10px;
@@ -196,4 +201,35 @@ nav>.logo{
 .about-text>p{
     color:grey;
     font-family: 'Roboto', serif;
+}
+.fab{
+    font-size: 50px;
+    color: var(--primary-color);
+    height: 50px;
+}
+/* skills section */
+.skills-text{
+    text-align: center;
+    padding:40px 20px;
+    box-sizing: border-box;
+    background-color: #ec008c;
+}
+.box>i{
+    font-size: 75px;
+}
+.container-icons{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+}
+.container-icons>.box{
+    background-color: var(--secondary-color);
+    width:100px !important;
+    padding:10px;
+    text-align: center;
+    align-items: center;
+}
+.react{
+    height: 200px;
 }
