@@ -20,6 +20,7 @@ font-family: 'Lobster Two', cursive;
     --tertiary-color:#ec008c;
     --primary-font:'Roboto', sans-serif;
     --secondary-font:'Spartan',sans-serif;
+
 }
 body{
     font-family: 'Roboto'; /* fallback for old browsers */
@@ -60,6 +61,10 @@ body{
 }
 .col-6{
     width: 50%;
+    height: auto;
+}
+.col-4{
+    width: 33.33%;
     height: auto;
 }
 .font-secondary{
@@ -296,4 +301,76 @@ nav>.logo{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+/* foorter styles */
+footer{
+    width: 100%;
+    height: auto;
+    color: #222222;
+    padding-top:0px;
+    background-color: #61dafb;
+}
+.bio{
+    padding: 20px 50px;
+    background-color: #132120;
+}
+.foot{
+    margin-left: 0px;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+.bio>h2{
+    margin-left: 15px;
+    margin-top:10px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.bio>h3{
+    margin-left: 15px;
+    letter-spacing: 1px;
+    color: grey;
+    margin-bottom: 5px !important;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.work{
+    background-color: #ff2d20;
+}
+.img-holder{
+    width: 100%;
+
+}
+.footer-img{
+    height: 200px;
+    width: 70%;
+    margin: 0px 15%;
+}
+.social-media{
+    text-align: center;
+}
+.social-icon-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.social-icon-holder>.fab{
+    color:black;
+    text-decoration: none;
+}
+.dark-footer{
+    margin-top: 20px;
+    padding:10px auto;
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.fa-heart{
+    color:rgb(241, 37, 139);
 }
