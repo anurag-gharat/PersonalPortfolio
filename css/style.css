@@ -240,16 +240,16 @@ nav>.logo{
 }
 .vertical{
     grid-row:span 2;
-    background-color:#ececec;
+    background-color:#f8f8f8;
 }
 .horizontal{
     grid-column:span 2;
-    background-color:#ececec;
+    background-color:#f8f8f8;
 }
 .normal{
     grid-row:span 2;
     grid-column:span 2;
-    background-color:#ececec;
+    background-color:#f8f8f8;
 }
 .fa-vuejs{
     color: #4fc08d;
@@ -277,4 +277,23 @@ nav>.logo{
 }
 .fa-js{
     color:#FAD02E;
+}
+/* contact section */
+.contact{
+    width: 100vw;
+    height: auto;
+}
+.contact-card{
+    width: 80%;
+    margin: 20px auto;
+    background-color: yellow !important;
+    display: flex;
+    color: #222222;
+    flex-direction: column !important;
+    padding: 50px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
