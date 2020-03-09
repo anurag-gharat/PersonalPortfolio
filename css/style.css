@@ -22,6 +22,9 @@ font-family: 'Lobster Two', cursive;
     --secondary-font:'Spartan',sans-serif;
 
 }
+*{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto'; /* fallback for old browsers */
     /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
@@ -87,6 +90,9 @@ nav{
 }
 nav>.logo{
     margin: 20px;
+}
+.nav-logo{
+    font-size: 20px !important;
 }
 .nav-links{
    display: block;
@@ -286,21 +292,54 @@ nav>.logo{
 /* contact section */
 .contact{
     width: 100vw;
+    margin-top: 50px !important;
     height: auto;
 }
 .contact-card{
     width: 80%;
     margin: 20px auto;
-    background-color: yellow !important;
     display: flex;
     color: #222222;
     flex-direction: column !important;
-    padding: 50px;
+    padding: 0px auto;
+    background-color: #f8f8f8;
 }
 .contact-form{
+    width: 50%;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+.contact-form>label{
+    margin-top: 30px;
+    color:grey;
+}
+textarea{
+    margin-bottom: 20px;
+}
+.contact-form>input,.contact-form>textarea{
+    border: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-bottom: 2px solid #00f2fe;
+    background-color: transparent;
+}
+.send{
+    margin: 20px auto !important;
+    width: 40%;
+    padding: 15px;
+    font-size: 20px;
+    font-family: var(--primary-font);
+    border: 0px;
+    color: white;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.send:hover{
+    opacity: .7;
+    transition: .4s ease;
+    transform: scale(1.05,1.05);
 }
 /* foorter styles */
 footer{
@@ -380,6 +419,30 @@ footer{
     display: flex;
     justify-content: center;
 }
+.fab{
+    transition: .5s ease;
+}
 .fa-heart{
     color:rgb(241, 37, 139);
+}
+.fa-facebook:hover{
+    color: #4267B2;;
+}
+.fa-instagram:hover{
+    background-image:linear-gradient(45deg,#515bd4,#8134af,#DD2A7B,#f58529);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.fa-linkedin:hover{
+    color: #0e76a8;
+}
+.fa-github:hover{
+    color: #333;
+}
+.fa-dribbble-square:hover{
+    color:#EA4C89;
+}
+.fa-behance-square:hover{
+    color:#1769ff;
 }
