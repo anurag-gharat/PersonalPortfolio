@@ -308,11 +308,10 @@ footer{
     height: auto;
     color: #222222;
     padding-top:0px;
-    background-color: #61dafb;
+    background-color:white;
 }
 .bio{
     padding: 20px 50px;
-    background-color: #132120;
 }
 .foot{
     margin-left: 0px;
@@ -339,28 +338,38 @@ footer{
     font-family: 'Noto Sans', sans-serif;
 }
 .work{
-    background-color: #ff2d20;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.design>a{
+    margin-right: 50px;
+}
+.git>a>i,.design>a>i,.social-icon-holder>.fab{
+    color:var(--secondary-color);
+    text-decoration:none;
+}
+.work>p,.git>p{
+    color: grey;
 }
 .img-holder{
     width: 100%;
 
 }
 .footer-img{
-    height: 200px;
+    height: 175px;
     width: 70%;
     margin: 0px 15%;
 }
 .social-media{
     text-align: center;
 }
+.social-media>h2{
+    color: grey;
+}
 .social-icon-holder{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.social-icon-holder>.fab{
-    color:black;
-    text-decoration: none;
+    flex-direction:row;
+    justify-content: space-evenly;
 }
 .dark-footer{
     margin-top: 20px;
